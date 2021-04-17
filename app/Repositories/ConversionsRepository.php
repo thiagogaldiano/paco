@@ -62,7 +62,7 @@ class ConversionsRepository extends BaseRepository
             $access_key = '4e139f2e755fbcf07625b7199849137f';
 
             // Initialize CURL:
-            $ch = curl_init('http://api.exchangeratesapi.io/v1/latest?date='.$date_conversion.'base='.$coin.'&access_key='.$access_key);
+            $ch = curl_init('http://api.exchangeratesapi.io/v1/latest?date='.$date_conversion.'&base='.$coin.'&access_key='.$access_key);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
             // Store the data:
